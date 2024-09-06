@@ -1,136 +1,225 @@
-p, body {
-    font-family: "Inter", sans-serif;
-    background-color: rgb(237, 226, 213);
+p,
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(237, 226, 213);
 }
 .header-section {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 .mission-statement-container {
-    display: flex;
-    align-items: flex-start;
-    box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
 }
 .mission-image-container {
-    margin-right: 20px;
-    margin-left: 200px;
-    height: 100%;
+  margin-right: 20px;
+  margin-left: 200px;
+  height: 100%;
 }
 .mission-img {
-    width: 100%; /* Ensure the image doesn't exceed its container */
-    height: 100%;    /* Maintain aspect ratio */
-    display:     block;  /* Remove bottom space/gap */
+  width: 100%; /* Ensure the image doesn't exceed its container */
+  height: 100%; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space/gap */
 }
 
 .mission-statement-content-container {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    padding-right: 100px;
-    /* padding-top: 300px; */
-    padding-left: 50px;
-    size: 50%;
-    height: fit-content
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  padding-right: 100px;
+  /* padding-top: 300px; */
+  padding-left: 50px;
+  size: 50%;
+  height: fit-content;
+  margin-top: 200px;
 }
 
-.mission-statement-title  {
-    margin: 0; /* Remove default margin for h2 */
-    font-size: 50px; /* Adjust the title size if needed */
+.mission-statement-title {
+  margin: 0; /* Remove default margin for h2 */
+  font-size: 50px; /* Adjust the title size if needed */
 }
 
-.mission-statement-content  {
-    margin: 0; /* Remove default margin from paragraphs */
-    line-height: 1.6; /* Improve readability */
-    font-size: 18px; /* Adjust the content size if needed */
+.mission-statement-content {
+  margin: 0; /* Remove default margin from paragraphs */
+  line-height: 1.6; /* Improve readability */
+  font-size: 18px; /* Adjust the content size if needed */
 }
 .property-list-container {
-    margin-top: 250px;
-    display: flex;
-    box-sizing: border-box;
+  margin-top: 250px;
+  display: flex;
+  box-sizing: border-box;
 }
 .property-list-title {
-    font-size: 50px; /* Adjust the title size if needed */
+  font-size: 50px; /* Adjust the title size if needed */
 }
 /* Container Styles */
 .property-list-container {
-    width: 80%;
-    margin: 0 auto;
-    flex-direction:column ;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 /* Title Styles */
 .property-list-title {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .property-list-title h2 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 /* Apartments Container */
 .apartments-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* Apartment Styles */
 .apartment {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .apartment-title {
-    font-size: 30px;
-    margin: 0;
+  font-size: 30px;
+  margin: 0;
 }
 
 .apartment-image-container img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    margin-right: 50px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 50px;
 }
 .kinetic-img {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 /* Specific Layout Adjustments */
 .apartment.whistler .apartment-image-container {
-    order: 1;
+  order: 1;
 }
 
 .apartment.whistler .apartment-content-container {
-    order: 2;
+  order: 2;
 }
 
 .apartment.kinetic.reverse .apartment-image-container {
-    order: 2;
+  order: 2;
 }
 
 .apartment.kinetic.reverse .apartment-content-container {
-    order: 1;
+  order: 1;
 }
 
 .apartment.hub .apartment-image-container {
-    order: 1;
+  order: 1;
 }
 
 .apartment.hub .apartment-content-container {
-    order: 2;
+  order: 2;
 }
 .dollar-figure {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 .apartment-description {
-    font-size: 18px;
-    line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.6;
 }
 .contact-container {
-    margin-top: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  margin-top: 250px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  margin-left: 100px;
+}
+.contact-title {
+  font-size: 50px; /* Adjust the title size if needed */
+  margin-left: 125px;
+}
+.contact-col-one {
+  width: 50%;
+}
+.contact-col-two {
+  width: 50%;
+}
+/* Basic styling for the form container */
+.contact-form {
+  max-width: 600px; /* Set a max width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding around the form */
+  background-color: rgb(
+    245,
+    240,
+    230
+  ); /* Slightly different shade to blend in */
+  border-radius: 8px; /* Rounded corners for the form container */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style labels to be clear and consistent */
+.contact-form label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 8px; /* Space below each label */
+  font-weight: bold; /* Make labels bold */
+  color: #333; /* Dark text color for readability */
+}
+
+/* Style text inputs and textarea for consistency */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%; /* Make input fields take full width */
+  padding: 10px; /* Add padding inside input fields */
+  margin-bottom: 15px; /* Space below each input field */
+  border: 1px solid #ccc; /* Light border color */
+  border-radius: 20px; /* Slightly rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}
+
+/* Specific styling for the textarea */
+.contact-form textarea {
+  height: 150px; /* Set a fixed height for the textarea */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Style the submit button */
+.contact-form input[type="submit"] {
+  background-color: grey; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 15px 20px; /* Add padding inside the button */
+  border-radius: 10px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for the submit button */
+.contact-form input[type="submit"]:hover {
+  background-color: black; /* Darker green on hover */
+}
+
+.footer-container {
+  margin-top: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(220, 210, 198);
+  border-top: 1px solid rgb(200, 190, 180);
+}
+.footer-container p {
+  background-color: rgb(220, 210, 198);
+}
+.insta-img {
+  width: 50%;
+  height: auto;
+}
+.footer-follow-title {
+  padding-left: 50px;
 }
