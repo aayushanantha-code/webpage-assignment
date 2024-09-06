@@ -1,4 +1,136 @@
 p, body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Inter", sans-serif;
     background-color: rgb(237, 226, 213);
+}
+.header-section {
+    margin-bottom: 100px;
+}
+.mission-statement-container {
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.mission-image-container {
+    margin-right: 20px;
+    margin-left: 200px;
+    height: 100%;
+}
+.mission-img {
+    width: 100%; /* Ensure the image doesn't exceed its container */
+    height: 100%;    /* Maintain aspect ratio */
+    display:     block;  /* Remove bottom space/gap */
+}
+
+.mission-statement-content-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    /* padding-top: 300px; */
+    padding-left: 50px;
+    size: 50%;
+    height: fit-content
+}
+
+.mission-statement-title  {
+    margin: 0; /* Remove default margin for h2 */
+    font-size: 50px; /* Adjust the title size if needed */
+}
+
+.mission-statement-content  {
+    margin: 0; /* Remove default margin from paragraphs */
+    line-height: 1.6; /* Improve readability */
+    font-size: 18px; /* Adjust the content size if needed */
+}
+.property-list-container {
+    margin-top: 250px;
+    display: flex;
+    box-sizing: border-box;
+}
+.property-list-title {
+    font-size: 50px; /* Adjust the title size if needed */
+}
+/* Container Styles */
+.property-list-container {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction:column ;
+}
+
+/* Title Styles */
+.property-list-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.property-list-title h2 {
+    font-size: 2em;
+}
+
+/* Apartments Container */
+.apartments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Apartment Styles */
+.apartment {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.apartment-title {
+    font-size: 30px;
+    margin: 0;
+}
+
+.apartment-image-container img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+.kinetic-img {
+    margin-left: 50px;
+}
+
+/* Specific Layout Adjustments */
+.apartment.whistler .apartment-image-container {
+    order: 1;
+}
+
+.apartment.whistler .apartment-content-container {
+    order: 2;
+}
+
+.apartment.kinetic.reverse .apartment-image-container {
+    order: 2;
+}
+
+.apartment.kinetic.reverse .apartment-content-container {
+    order: 1;
+}
+
+.apartment.hub .apartment-image-container {
+    order: 1;
+}
+
+.apartment.hub .apartment-content-container {
+    order: 2;
+}
+.dollar-figure {
+    font-size: 20px;
+    font-weight: bold;
+}
+.apartment-description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.contact-container {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
